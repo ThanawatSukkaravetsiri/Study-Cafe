@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <h1 class="logo">Study Cafe</h1>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="hero">
+            <h2>Quiet seats. Strong coffee. Fast Wifi.</h2>
+            <p>A cozy place for student to code,read and think.</p>
+            <a class="btn" href="#menu">See the menu</a>
+        </section>
+
+        <section id="main" class="section">
+            <h2>Our menu</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Ice latte</h3>
+                    <p>Espresso, milk and ice.</p>
+                    <p class="price">60 THB</p>
+                </article>
+                <article class="card">
+                    <h3>Green tea</h3>
+                    <p>Fresh and lightly sweet.</p>
+                    <p class="price">55 THB</p>
+                </article>
+                <article class="card">
+                    <h3>Croissant</h3>
+                    <p>Baked fresh every morning.</p>
+                    <p class="price">45 THB</p>
+                </article>
+            </div>
+        </section id="about" class="section section-alt">
+        <h2>About us</h2>
+        <p>We opened Study Cafe so students have a calm space with power outlets at every table.</p>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" row="4"></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Study Cafe</p>
+    </footer>
+</body>
+
+</html>
